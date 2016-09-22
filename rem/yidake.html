@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script>
+;(function(win,doc){
+	var d = doc.documentElement;
+	function change(){
+		d.style.fontSize = d.clientWidth/16+"px";
+	}
+	win.addEventListener("resize",change,false);
+	change();
+})(window,document);
+</script>
+<title>Examples</title>
+<link rel="stylesheet" href="css/yidake.css">
+</head>
+<body>
+<div class="all">
+	<div>
+		水果生鲜行业
+		<span></span>
+	</div>
+	<ul>
+		<li>
+			<img src="img/yidake1.jpg" alt="">
+			<p></p>
+			<span></span>
+		</li>
+		<li>
+			<img src="img/yidake2.jpg" alt="">
+			<p></p>
+			<span></span>
+		</li>
+		<li>
+			<img src="img/yidake3.jpg" alt="">
+			<p></p>
+			<span></span>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

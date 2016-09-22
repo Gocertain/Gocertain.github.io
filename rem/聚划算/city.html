@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script>
+;(function(win,doc){
+	var d = doc.documentElement;
+	function change(){
+		d.style.fontSize = d.clientWidth/16+"px";
+	}
+	win.addEventListener("resize",change,false);
+	change();
+})(window,document);
+</script>
+<title>Examples</title>
+<style>
+*{margin: 0;padding: 0;list-style: none;}
+header{
+	width: 16rem;
+	height: 2.5rem;
+	background: -webkit-linear-gradient(rgba(236,236,236,0),rgba(236,236,236,1));;
+}
+header .btn{
+	width: 3.5rem;
+	height: 1.7rem;
+	background:url("img/back.png") no-repeat;
+	background-size: 100%;
+	margin:0.37rem;
+	float:left;
+}
+header .logo{
+	line-height:1.5rem;
+	height: 1.5rem;
+	float:left;
+	font-size:0.75rem;
+	margin-top:0.5rem;
+	margin-left: 2.5rem;
+}
+p{width: 16rem;height:2.2rem;line-height: 2.2rem;font-size:0.7rem;text-indent:2em;}
+dl dt:nth-child(n){}
+dl dt{width: 100%;height: 1.5rem;font-size:0.65rem;border-bottom: 1px solid #ccc;
+		background:#eee;color:#999;line-height:1.5rem;text-indent: 1em;font-weight: bold;}
+dl dd{width: 100%;height: 2.2rem;font-size:0.75rem;line-height:2.2rem;border-bottom: 1px solid #ccc;text-indent: 2rem;}
+</style>
+</head>
+<body>
+<header id="header">
+	<div class="btn"></div>
+    <h1 class="logo">切换城市</h1>
+</header>
+<p>当前位置—</p>
+<dl>
+	<dt>热门城市</dt>
+	<dd>南京</dd>
+	<dd>福州</dd>
+	<dd>武汉</dd>
+	<dd>天津</dd>
+	<dt>A</dt>
+	<dd>鞍山</dd>
+	<dd>安庆</dd>
+	<dd>澳门</dd>
+	<dd>鞍山</dd>
+	<dd>安庆</dd>
+	<dd>澳门</dd>
+	<dd>鞍山</dd>
+	<dd>安庆</dd>
+	<dd>澳门</dd>
+	<dd>鞍山</dd>
+	<dd>安庆</dd>
+	<dd>澳门</dd>
+</dl>
+</body>
+</html>

@@ -1,0 +1,84 @@
+*{margin: 0;padding: 0;}
+header{
+	width: 16rem;
+	height: 2rem;
+	display:-webkit-box;
+}
+header a{
+	-webkit-box-flex:1;
+	display:block;
+	font-size:0.6rem;
+	line-height:2rem;
+	text-align:center;
+}
+header a:hover{
+	background:#f67532;
+	color:#fff;
+}
+section{
+	width:16rem;
+	height: 8.5rem;
+	overflow: hidden;
+	position:relative;
+	background:#de5;
+}
+section div{
+	width: 200%;
+	height: 8.5rem;
+}
+section div img{
+	width: 50%;
+	height: 100%;
+	float:left;
+}
+section p{
+	position:absolute;
+	right:1.17rem;
+	bottom:0.4rem;
+}
+section p span{
+	width: 0.3rem;
+	height: 0.3rem;
+	border-radius: 50%;
+	background:red;
+	display:block;
+	float:left;
+	margin:0 0.096rem;
+}
+nav{
+	width: 16rem;
+	height: 10rem;
+	margin-top:1rem;
+}
+nav div{
+	width: 16rem;
+	height: 2rem;
+	border-top:0.1rem solid #a6c6de;
+	box-sizing: border-box;
+}
+nav a{
+	width: 3.2rem;
+	height: 100%;
+	text-align: center;
+	font-size:0.7rem;
+	line-height:2rem;
+	float:left;
+
+}
+nav a:hover{
+	background:#f67532;
+	color:#fff;
+}
+nav ul{
+	width: 15rem;
+	padding: 0 0.5rem;
+}
+nav ul li{
+	width: 100%;
+	height: 1.8rem;
+	list-style:none;
+	font-size:0.75rem;
+	line-height:1.8rem;
+	border-bottom:0.05rem solid #ccc;
+	box-sizing: border-box;
+}

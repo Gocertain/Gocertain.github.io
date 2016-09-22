@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>立体翻转</title>
+<style>
+*{padding:0;margin:0;}
+html{overflow: hidden;}
+#all{width: 700px;height: 400px;margin: 100px auto;font-size:50px;line-height:200px;text-align:center;
+	transform-style:preserve-3d;
+	transform:perspective(800px) rotateY(0deg);
+	/*transition:1s all ease;*/}
+#all div{width:100%;height:100%;position: absolute;left:0;top: 0;}
+#all .front{background:url(img2/0.jpg);
+			transform: scale3d(0.7,0.7,0.7) translateZ(350px);z-index:2;}
+#all .right{background:url(img2/1.jpg);
+			transform:scale3d(0.7,0.7,0.7) rotateY(90deg) translateZ(350px);z-index:1;}
+/*#all:active{transform:perspective(800px) rotateY(-90deg)}*/
+
+</style>
+<script>
+window.onload = function(){
+	var oD = document.getElementById("all");
+	var oF = oD.children[0];
+	var oL = oD.children[1];
+	var iNow = 0;
+	var bReady = true;
+	oD.onclick = function(){
+		if(!bReady) return;
+		bReady = false;
+		iNow++;
+		oD.style.transition = "1s all ease";
+		oD.style.transform = "perspective(800px) rotateY(-90deg)";
+		oD.addEventListener("transitionend",function(){
+			this.style.transition = "none";
+			this.style.transform = "perspective(800px) rotateY(0deg)";
+
+			oF.style.backgroundImage = "url(img2/"+iNow%3+".jpg)";
+			oL.style.backgroundImage = "url(img2/"+(iNow+1)%3+".jpg)";
+			bReady = true;
+		},false)
+	}
+
+}
+</script>
+</head>
+<body>
+	<div id="all">
+		<div class="front"></div>
+		<div class="right"></div>
+	</div>
+</body>
+</html>

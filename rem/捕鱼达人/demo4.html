@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<meta name="description" content="智能社是一家专注于web前端开发技术的公司，目前主要提供JavaScript培训和HTML5培训两项服务，同时还推出了大量javascript基础知识教程，智能课堂为你带来全新的学习方法和快乐的学习体验。" />
+<title>智能社— http://www.zhinengshe.com</title>
+<style>
+*{margin:0; padding:0;}
+body{background:#000; text-align:center;}
+canvas{background:url(img/game_bg_2_hd.jpg) no-repeat;}
+</style>
+<script src="js/sourse.js"></script>
+<script src="js/common.js"></script>
+<script>
+var BULLET_SIZE = [
+	null,
+	{sx:86,sy:0,width:24,height:26},
+	{sx:61,sy:0,width:25,height:29},
+	{sx:32,sy:35,width:27,height:31},
+	{sx:30,sy:82,width:29,height:33},
+	{sx:0,sy:82,width:30,height:34},
+	{sx:30,sy:0,width:31,height:35},
+	{sx:0,sy:44,width:32,height:38}
+];
+function Bullet(img,type){
+	this.img = img;
+	this.sx = BULLET_SIZE[type].sx;
+	this.sy = BULLET_SIZE[type].sy;
+	this.x = 0;
+	this.y = 0;
+	this.width = BULLET_SIZE[type].width;
+	this.height = BULLET_SIZE[type].height;
+	this.r = 0;
+	this.iSpeed = 1;
+	this.type = type;
+}
+Bullet.prototype.draw = function(gd){
+	gd.beginPath();
+	gd.drawImage(
+		this.img,
+		this.sx,this.sy,this.width,this.height,
+		this.x,this.y,this.width,this.height
+	);
+};
+Bullet.prototype.move = function(){
+	this.x+=this.iSpeed;
+};
+window.onload=function(){
+	var oC = document.getElementById('c1');
+	var gd = oC.getContext('2d');
+	loadImages(sourse,function(images){
+		var bullet = new Bullet(images.bullet,1);
+		bullet.x = 200;
+		bullet.y = 200;
+		setInterval(function(){
+			gd.clearRect(0,0,oC.width,oC.height);
+			bullet.move();
+			bullet.draw(gd);
+		},16);
+	});
+};
+</script>
+</head>
+
+<body>
+	<canvas id="c1" width="800" height="600"></canvas>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

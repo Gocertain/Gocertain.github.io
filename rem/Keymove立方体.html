@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<style>
+*{margin: 0;padding: 0;}
+#all{width: 200px;height: 200px;margin:50px auto;
+	position:relative;_background:#ccc;transform-style:preserve-3d;
+	font-size:50px;line-height:200px;text-align:center;
+	transform:perspective(800px)  rotateX(0deg);}
+#all div{width: 200px;height: 200px;position:absolute;left:0;top:0;
+	background:blue;border:1px solid #aaa;}
+#all .front{transform:translateZ(100px);}
+#all .back{transform:translateZ(-100px) scale(-1,1);}
+#all .right{transform:rotateY(90deg) translateZ(100px); }
+#all .left{transform:rotateY(-90deg) translateZ(100px);}
+#all .top{transform:rotateX(90deg) translateZ(100px);}
+#all .bottom{transform:rotateX(-90deg) translateZ(100px) ;}
+/*#all:active{transform:perspective(800px) rotateX(-33deg) rotateY(45deg);}*/
+</style>
+<script>
+window.onload = function(){
+	var oD = document.getElementById("all");
+
+	var iL = 0;
+	var iT = 0;
+	var oB = oT = oL = oR = false;
+	setInterval(function(){
+		if(oL){
+			iL-=10;
+		}
+		if(oT){
+			iT+=10;
+		}
+		if(oR){
+			iL+=10;
+		}
+		if(oB){
+			iT-=10;
+
+		}
+		oD.style.transform="perspective(800px) rotateX("+iT+"deg) rotateY("+iL+"deg)";
+	},100)
+
+	document.onkeydown = function(ev){
+		var oEvent = ev || event;
+		switch(oEvent.keyCode){
+			case 37:
+			oL = true;
+			break;
+			case 38:
+			oT = true;
+			break;
+			case 39:
+			oR = true;
+			break;
+			case 40:
+			oB = true;
+			break;
+		}
+	}
+	document.onkeyup = function(ev){
+		var oEvent = ev || event;
+		switch(oEvent.keyCode){
+			case 37:
+			oL = false;
+			break;
+			case 38:
+			oT = false;
+			break;
+			case 39:
+			oR = false;
+			break;
+			case 40:
+			oB = false;
+			break;
+		}
+	}
+}
+</script>
+</head>
+<body>
+	<div id="all">
+		<div class="front">前面</div>
+		<div class="back">后面</div>
+		<div class="right">右侧</div>
+		<div class="left">左侧</div>
+		<div class="top">顶部</div>
+		<div class="bottom">底部</div>
+	</div>
+</body>
+</html>

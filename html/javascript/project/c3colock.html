@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<meta name="description" content="智能社是一家专注于web前端开发技术的公司，目前主要提供JavaScript培训和HTML5培训两项服务，同时还推出了大量javascript基础知识教程，智能课堂为你带来全新的学习方法和快乐的学习体验。" />
+<title>智能社— http://www.zhinengshe.com</title>
+<style>
+*{margin:0; padding:0;}
+.clock{ width:300px; height:300px; border:5px solid #000; border-radius:50%; position:absolute; top:50%; left:50%; margin-top:-150px; margin-left:-150px; }
+.clock div{position:absolute; -webkit-transform-origin:center bottom; -webkit-transform:perspective(800px) rotate(0deg); }
+.clock .hou{ width:10px; height:80px; background:#000; left:50%; margin-left:-5px; top:70px; border-radius:50% 50% 0 0;}
+.clock .min{ width:8px; height:100px; background:#000; left:50%; margin-left:-4px; top:50px; border-radius:50% 50% 0 0;}
+.clock .sec{ width:4px; height:120px; background:red; left:50%; margin-left:-2px; top:30px; border-radius:50% 50% 0 0;}
+.clock span{ position:absolute; left:50%; top:0; width:4px; height:8px; margin-left:-2px; background:#000; -webkit-transform-origin:center 150px; -webkit-transform:perspective(800px) rotate(0deg);}
+.clock span.big-scale{ width:6px; margin-left:-3px; height:12px;}
+.big-scale em{position:absolute; top:15px; font-style:normal;-webkit-transform:perspective(800px) rotate(0deg); width:30px; left:50%; margin-left:-15px; text-align:center;}
+.clock .cap{ width:20px; height:20px; border-radius:50%; background: -webkit-radial-gradient(#fff,black); position:absolute; left:50%; top:50%; margin-left:-10px; margin-top:-10px;}
+</style>
+<script>
+window.onload = function(){
+	var oClock = document.querySelector('.clock');
+	var oHou = document.querySelector('.clock .hou');
+	var oMin = document.querySelector('.clock .min');
+	var oSec = document.querySelector('.clock .sec');
+
+
+	var N = 60;
+	for(var i=0;i<N;i++){
+		var oS = document.createElement('span');
+		oS.style.WebkitTransform = 'perspective(800px) rotate('+i*6+'deg)';
+		if(i%5==0){
+			oS.className = 'big-scale';
+			oS.innerHTML = '<em>'+(i/5||12)+'<\/em>';
+			var oEm = oS.children[0];
+			oEm.style.WebkitTransform = 'perspective(800px) rotate('+-i*6+'deg)';
+		}
+		oClock.appendChild(oS);
+	}
+
+
+	function clock(){
+		var oDate = new Date();
+		var h = oDate.getHours();
+		var m = oDate.getMinutes();
+		var s = oDate.getSeconds();
+		var ms = oDate.getMilliseconds();
+
+		oHou.style.WebkitTransform = 'perspective(800px) rotate('+(h*30+m/60*30)+'deg)';
+		oMin.style.WebkitTransform = 'perspective(800px) rotate('+(m*6+s/60*6)+'deg)';
+		oSec.style.WebkitTransform = 'perspective(800px) rotate('+(s*6+ms/1000*6)+'deg)';
+	};
+	clock();
+	setInterval(clock,1000);
+};
+</script>
+</head>
+
+<body>
+	<div class="clock">
+		<div class="hou"></div>
+		<div class="min"></div>
+		<div class="sec"></div>
+		<div class="cap"></div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

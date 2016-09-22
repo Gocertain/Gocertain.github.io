@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<meta name="description" content="智能社是一家专注于web前端开发技术的公司，目前主要提供JavaScript培训和HTML5培训两项服务，同时还推出了大量javascript基础知识教程，智能课堂为你带来全新的学习方法和快乐的学习体验。" />
+<title>智能社— http://www.zhinengshe.com</title>
+<style>
+*{margin:0; padding:0;}
+body{background:#000; text-align:center;}
+canvas{background:url(img/game_bg_2_hd.jpg) no-repeat;}
+</style>
+<script src="js/sourse.js"></script>
+<script src="js/common.js"></script>
+<script>
+var FISH_SIZE = [
+	null,
+	{width:55,height:37},
+	{width:78,height:64},
+	{width:72,height:56},
+	{width:77,height:59},
+	{width:107,height:122}
+];
+function Fish(images,type){
+	this.img = images['fish'+type];
+	this.x = 0;
+	this.y = 0;
+	this.sx = 0;
+	this.sy = 0;
+	this.width = FISH_SIZE[type].width;
+	this.height = FISH_SIZE[type].height;
+	this.r = 0;
+	this.iSpeed = 3;
+	this.type = type;
+}
+Fish.prototype.draw = function(gd){
+	gd.beginPath();
+	gd.drawImage(
+		this.img,
+		this.sx,this.sy,this.width,this.height,
+		this.x,this.y,this.width,this.height
+	);
+};
+Fish.prototype.move = function(){
+	this.x+=this.iSpeed;
+};
+window.onload=function(){
+	var oC = document.getElementById('c1');
+	var gd = oC.getContext('2d');
+	loadImages(sourse,function(images){
+		var fish = new Fish(images,5);
+		fish.x = 200;
+		fish.y = 200;
+		setInterval(function(){
+			gd.clearRect(0,0,oC.width,oC.height);
+			fish.move();
+			fish.draw(gd);
+		},16);
+	});
+};
+</script>
+</head>
+
+<body>
+	<canvas id="c1" width="800" height="600"></canvas>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

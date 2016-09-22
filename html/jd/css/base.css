@@ -1,0 +1,14 @@
+@charset "utf-8";
+body,p,ul,ol,dl,dd{margin:0;padding:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-weight:normal;color:#000;}
+a{text-decoration:none;color:#000;}
+strong,b{font-weight:normal;}
+i,em{font-style:none;}
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{display:block;content:'';clear:both;}
+.clearfix{zoom:1;}
+.w{width:987px;margin:0 auto;}
+input{border:none;outline:none;}
+

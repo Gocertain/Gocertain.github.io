@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+    <style>
+        .modal-header{border: none}
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src="vue.js"></script>
+    <style type="text/css">
+        .modal-header,.modal-footer{border:none;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form role="form">
+            <div class="form-group">
+                <label for="username" class="text-danger">用户名:</label>
+                <input type="text" id="username" class="form-control" placeholder="请输入用户名">
+            </div>
+            <div class="form-group">
+                <label for="username" class="text-danger">年 &nbsp;龄:</label>
+                <input type="text" id="username" class="form-control" placeholder="请输入年龄">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-sm btn-primary">添加</button>
+                <button class="btn btn-sm btn-danger">重置</button>
+            </div>
+        </form>
+        <hr>
+        <table class="table table-bordered table-hover">
+            <caption class="h3 text-info">请输入用户信息</caption>
+            <tr class="text-danger text-center">
+                <td>序号</td>
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>操作</td>
+            </tr>
+            <tr class="text-center text-primary">
+                <td>1</td>
+                <td>blue</td>
+                <td>50</td>
+                <td>
+                    <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">删除</button>
+                </td>
+            </tr>
+            <tr class="text-center text-primary">
+                <td>2</td>
+                <td>byron</td>
+                <td>50</td>
+                <td>
+                    <button class="btn btn-sm btn-primary">删除</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="text-right">
+                    <button class="btn btn-danger">全部删除</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="text-center text-muted">
+                    <p>暂无内容……</p>
+                </td>
+            </tr>
+        </table>
+
+        <!--弹出框摸态框-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title h4" id="myModalLabel">确定要删除吗？！！！</h4>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确定</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

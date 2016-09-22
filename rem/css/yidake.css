@@ -1,0 +1,36 @@
+*{margin: 0;padding: 0;}
+.all{
+	width: 15rem;
+	padding: 0 0.5rem;
+
+}
+.all div{
+	width: 14.25rem;
+	height: 2rem;
+	background:blue;
+	border-radius:0.1rem 0.1rem 0 0;
+	font-size:0.7rem;
+	line-height:2rem;
+	color:#fff;
+	padding-left:0.75rem;
+}
+.all ul{
+	border-left:0.05rem solid #ccc;
+	border-right:0.05rem solid #ccc;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+}
+.all ul li{
+	-webkit-box-flex:1;
+	list-style:none;
+	border-bottom:0.05rem dashed #ccc;
+
+}
+.all ul li:nth-child(3){
+	border-bottom:0.05rem solid #ccc;
+}
+.all ul li img{
+	width: 5.5rem;
+	height: 1.6rem;
+	margin:1.4rem ;
+}

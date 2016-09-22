@@ -1,0 +1,121 @@
+@charset "utf-8";
+.w .wyms{width:987px;
+         height:56px;
+		 border-bottom:1px solid #c81623;
+}
+
+.wyms .tu{width:31px;
+          height:25px;
+		  margin-top:22px;
+		  margin-right:10px;
+  }
+.wyms .type{width:78px;
+            height:18px;
+			font-size:18px;
+			line-height:18px;
+			color:#323232;
+			margin-top:26px;
+			}
+.w .middle{width:987px;
+           height:474px;
+		   margin-bottom:10px;
+}
+.w .good{width:210px;
+        height:237px;
+		background:url(../wym/1.png) no-repeat;
+		position:relative;
+}
+.good .mask{width:210px;
+           height:92px;
+		   background:#CCC;;
+		   opacity:0.5;
+		   filter:alpha(opacity=50);
+		   position:absolute;
+		   left:0;
+		   bottom:0;
+
+}
+.good .if{ width:210px;
+            height:26px;
+			font-size:14px;
+			color:#535353;
+			line-height:26px;
+			position:absolute;
+		}
+.good .if .many{font-size:13px;
+                color:#000;
+				margin-left:6px;
+}
+.good .if .much{margin-left:25px;}
+.good .in{position:absolute;
+          left:0;
+		  bottom:56px;
+}
+.good .on{position:absolute;
+          left:0;
+		  bottom:17px;
+}
+.s .small{width:395px;
+          height:237px;
+		  background:url(../wym/564ad38fN3f87b852.jpg) no-repeat;
+		  position:relative;
+}
+.s .small .big{width:50px;
+               height:9px;
+			   position:absolute;
+			   left:170px;
+			   bottom:12px;
+}
+.s .small .big span{width:9px;
+                    height:9px;
+					background:#3e3e3e;
+					border-radius:50%;
+					float:left;
+}
+.s .small .big .bigger{margin-right:4px;}
+.s .small .big .active{background:#b61b1f;}
+.png1 .xie{width:191px;
+            height:117px;
+			border:1px solid #e1e1e1;
+			border-left:none;
+	}
+.png1 .xie1{width:190px;
+            height:117px;
+			border:1px solid #e1e1e1;
+			border-left:none;
+			border-right:none;
+	}
+.png2 .xie2{width:191px;
+            height:117px;
+			border:1px solid #e1e1e1;
+			border-left:none;
+			border-top:none;
+}
+.png2 .xie3{width:190px;
+            height:117px;
+			border-bottom:1px solid #e1e1e1;
+}
+.s .good1{background:url(../wym/564d7a21Nd840d69d.jpg) no-repeat;}
+.s .small1{background:url(../wym/2.png) no-repeat;}
+.w .logo{width:987px;
+         height:66px;
+		 background:#f7f7f7;
+		 position:relative;
+
+}
+.logo ul{position:absolute;
+         left:10px;
+		 top:13px;
+		}
+
+
+.logo li{width:120px;
+         height:40px;
+		 border-right:1px dotted #ccc;
+		 text-align:center;
+		 line-height:40px;
+		 float:left;
+ }
+ .logo .list{border-right:none;}
+/* CSS Document */
+

@@ -1,0 +1,75 @@
+@charset "utf-8";
+.xcp .xcp-top{height:30px;background:#f1f1f1;font-size:12px;line-height:30px;}
+.xcp .xcp-top .xcp-1{margin-left:8px;}
+.xcp .xcp-top .down{width:10px;height:5px;margin-left:8px;display:inline-block;background:url(../jcp/images/down_03.jpg);}
+.xcp .xcp-top ul{width:807px;height:30px;margin-left:94px;}
+.xcp .xcp-top ul li{padding:0 7px;float:left;}
+.xcp .xcp-top ul li.admin{padding:0;}
+.xcp .xcp-top ul li.admin-1{padding:0 20px 0 3px;}
+.xcp .xcp-top ul li.admin-1 a{color:#b1191a;}
+.xcp .xcp-top ul li .phone{width:16px;height:20px;margin-top:4px;display:block;background:url(../jcp/jd2015img.png) no-repeat;float:left;}
+.xcp .tupian{width:987px;height:80px;}
+.xcp .search{height:100px;}
+.xcp h2{width:284px;height:100px;text-indent:-99em;background:url(../jcp/images/images/logo_06.jpg) no-repeat;margin-right:78px;}
+.xcp .search-1 .search-11{width:458px;height:32px;border:2px solid #b61d1d;margin-top:40px;}
+.xcp .search-1 .search-11 input{width:378px;line-height:30px;font-size:18px;}
+.xcp .search-1 .search-11 a{width:80px;background:#b61d1d;font-size:16px;line-height:32px;text-align:center;color:#FFF;display:block;}
+.xcp .search-1 p{margin:0 -7px;}
+.xcp .search-1 p a{float:left;font-size:12px;line-height:24px;padding:0 7px;display:block;}
+.xcp .shopping{width:92px;height:34px;border:1px solid #dfdfdf;background:url(../jcp/jd2015img.png) no-repeat 17px -49px #f9f9f9;font-size:12px;line-height:34px;padding-left:44px;position:relative;margin-top:40px;}
+.xcp .shopping .down-1{height:10px;width:5px;margin-left:8px;display:inline-block;background:url(../jcp/images/images/huadong_14.jpg);}
+.xcp .shopping .num{height:14px;position:absolute;left:104px;top:-3px;}
+.xcp .shopping .num .l{width:5px;height:14px;background:url(../jcp/images/images/huadong_07.jpg) no-repeat;position:absolute;left:0;top:0;}
+.xcp .shopping .num .r{width:5px;height:14px;background:url(../jcp/images/images/huadong_09.jpg) no-repeat;position:absolute;right:0;top:0}
+.xcp .shopping .num .m{height:14px;background:#c81623;color:#FFF;font-size:12px;line-height:14px;padding:0 5px;text-align:center;}
+
+.when{height:514px;}
+.when .list-1{height:44px;width:987px;border-bottom:2px solid #b1191a;color:#000;font-weight:bold;line-height:44px;}
+.when .list-1 li{float:left;padding:0 20px;}
+.when .list-1 .list-11{width:170px;height:44px;background:#b1191a;color:#FFF;padding-left:10px;}
+.when .list-2 ul{width:200px;height:468px;background:#c81623;}
+.when .list-2 ul li{font-size:14px;line-height:31px;padding-left:10px;color:#FFF;}
+.when .list-2 ul li span{float:right;padding-right:5px;}
+.when .list-3{width:512px;height:454px;margin:12px 10px 0 10px;overflow:hidden;position:relative;}
+.when .list-3 .list-31{width:32px;height:62px;background:#000;opacity:0.3;color:#FFF;font-size:25px;line-height:62px;text-align:center;position:absolute;left:0;top:50%;}
+.when .list-3 .list-32{width:32px;height:62px;background:#000;opacity:0.3;color:#fff;font-size:25px;line-height:62px;text-align:center;position:absolute;right:0;top:50%;}
+.when .list-3 .list-33{width:114px;height:16px;position:absolute;left:42%;bottom:8px;}
+.when .list-3 .list-33 span{width:18px;height:18px;border-radius:5px;background:#3e3e3e;color:#FFF;display:inline-block;margin-right:-6px;line-height:18px;text-align:center;}
+.when .list-3 .list-33 span:hover{background:red;}
+.when .list-4{width:246px;height:452px;border:1px solid #ccc;margin-top:12px;}
+.when .list-4 dl{height:168px;border-bottom:1px dotted #ccc;padding:0 16px;}
+.when .list-4 dl dt{height:42px;border-bottom:1px solid #ccc;font-size:16px;line-height:42px;}
+.when .list-4 dl dt a{font-size:12px;float:right;}
+.when .list-4 dl dd{font-size:10px;padding-top:10px;}
+.when .list-5{}
+.when .list-5 h4{font-size:16px;line-height:42px;border-bottom:1px dotted #ccc;padding-left:16px;}
+.when .list-5 p.list-52{border-bottom:1px solid #ccc;}
+.when .list-5 p .list-51{width:60px;height:26px;border-right:1px solid #ccc;display:inline-block;font-size:14px;line-height:26px;text-align:center;}
+.when .list-5 p .game{border-right:0;}
+.when .list-5 .c{width:246px;hiehgt:180px;padding:0 16px;padding-top:16px;}
+.when .list-5 .c .cb .ca{width:52px;height:20px;margin-right:10px;font-size:12px;line-height:20px;text-align:center;display:inline-block;margin-bottom:10px;}
+.when .list-5 .c .cb .ca:hover{background:red;}
+.when .list-5 div.first{width:65px;height:120px;margin-right:10px;}
+.when .list-5 .c .first span{width:58px;height:20px;background:red;color:#ccc;font-size:12px;line-height:20px;text-align:center;margin-top:5px;display:block;margin-left:3px;}
+.when .list-5{height:10px;font-size:12px;margin-top:12px;}
+.when .list-5 .cc .list-53{width:22px;height:10px;background:red;color:#FFF;font-size:8px;line-height:10px;margin-right:5px;text-align:center;diaplay:inline-block;padding:0 5px}
+.list-6{height:170px;margin-top:10px;}
+.list-6 img{width:243px;heihgt:164px;float:left;margin-right:3px;display:block;}
+.list-7{height:220px;margin-top:5px;margin-bottom:25px;}
+.list-7 .list-72{width:170px;height:220px;}
+.list-7 .list-71{width:815px;}
+.list-7 .list-71 img{width:81px;height:72px;float:left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

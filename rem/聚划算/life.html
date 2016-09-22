@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script>
+;(function(win,doc){
+	var d = doc.documentElement;
+	function change(){
+		d.style.fontSize = d.clientWidth/16+"px";
+	}
+	win.addEventListener("resize",change,false);
+	change();
+})(window,document);
+</script>
+<title>Examples</title>
+<style>
+*{margin: 0;padding: 0;list-style: none;}
+header{
+	width: 16rem;
+	height: 2.5rem;
+	background: -webkit-linear-gradient(rgba(236,236,236,0),rgba(236,236,236,1));;
+}
+header .btn{
+	width: 3.5rem;
+	height: 1.7rem;
+	background:url("img/back.png") no-repeat;
+	background-size: 100%;
+	margin:0.37rem;
+	float:left;
+}
+header .logo{
+	line-height:1.5rem;
+	height: 1.5rem;
+	float:left;
+	font-size:0.75rem;
+	margin-top:0.5rem;
+	margin-left: 1.8rem;
+}
+header .btn1{
+	margin-top:0.5rem;
+	width: 2.4rem;
+	height: 1.4rem;
+	font-size:0.6rem;
+	line-height: 1.4rem ;
+	text-align:center;
+	color:#000;
+	float:right;
+	margin-right:0.5rem;
+	box-shadow:0 0 0.2rem #999;
+	border-radius:0.2rem;
+	border:1px solid #ccc;
+}
+.menu{
+	width: 16rem;
+	height: 1.9rem;
+	display:-webkit-box;
+	border-top:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;
+}
+.menu li{height:1.9rem;border-left:1px solid #dcdcdc;
+	-webkit-box-flex:1;font-size:0.6rem;line-height:1.9rem;
+	text-align:center;
+}
+
+.section{
+	width: 16rem;
+}
+.section li{
+	padding:0.5rem 0 0 0.5rem;
+	width: 15.5rem;
+	height: 4.5rem;
+	border-bottom:1px solid #dcdcdc;
+}
+.section li .one{
+	width: 6rem;
+	height: 4rem;
+	box-sizing: border-box;
+	border:1px solid #dcdcdc;
+	float:left;
+}
+.section li .one img{
+	width: 5.6rem;
+	height: 3.6rem;
+	margin:0.2rem;
+}
+.section li .two{
+	width: 7.8rem;
+	float:left;
+	margin-left:0.7rem;
+}
+.section li .two p:nth-child(1){
+	font-size:0.7rem;
+}
+.section li .two p:nth-child(1) span{
+	color:red;
+}
+.section li .two p:nth-child(2){
+	font-size:0.4rem;
+	color:red;
+}
+.section li .two p{
+	margin-bottom:0.5rem;
+}
+.section li .two p:nth-child(2) b{
+	font-size:0.75rem;
+}
+.section li .two p:nth-child(2) span{
+	margin-left:0.5rem;
+	color:#999;
+	text-decoration: line-through;
+}
+.section li .two p:nth-child(3){
+	font-size:0.4rem;
+	color:#999;
+}
+</style>
+</head>
+<body>
+<header id="header">
+	<a href="juhuasuan.html"><div class="btn"></div></a>
+    <h1 class="logo">生活团 杭州</h1>
+    <div class="btn1">分类</div>
+</header>
+<div class="menu">
+	<li><a href="goods.html">商品</a></li>
+	<li><a href="javascript:;">生活</a></li>
+	<li><a href="brand.html">品牌</a></li>
+	<li><a href="money.html">聚宝盆</a></li>
+</div>
+<div class="section">
+	<li>
+		<div class="one">
+			<img src="img/life/life1.jpg" alt="">
+		</div>
+		<div class="two">
+			<p><span>1.2折</span>新田园，林下散养草鸡蛋 40枚 纯天然无污</p>
+			<p>
+				￥<b>51</b>.00
+				<span>￥96.00</span>
+			</p>
+			<p><i>1240</i>人已购买</p>
+		</div>
+	</li>
+	<li>
+		<div class="one">
+			<img src="img/life/life2.jpg" alt="">
+		</div>
+		<div class="two">
+			<p><span>1.2折</span>新田园，林下散养草鸡蛋 40枚 纯天然无污</p>
+			<p>
+				￥<b>51</b>.00
+				<span>￥96.00</span>
+			</p>
+			<p><i>1240</i>人已购买</p>
+		</div>
+	</li>
+	<li>
+		<div class="one">
+			<img src="img/life/life3.jpg" alt="">
+		</div>
+		<div class="two">
+			<p><span>1.2折</span>新田园，林下散养草鸡蛋 40枚 纯天然无污</p>
+			<p>
+				￥<b>51</b>.00
+				<span>￥96.00</span>
+			</p>
+			<p><i>1240</i>人已购买</p>
+		</div>
+	</li>
+	<li>
+		<div class="one">
+			<img src="img/life/life4.jpg" alt="">
+		</div>
+		<div class="two">
+			<p><span>1.2折</span>新田园，林下散养草鸡蛋 40枚 纯天然无污</p>
+			<p>
+				￥<b>51</b>.00
+				<span>￥96.00</span>
+			</p>
+			<p><i>1240</i>人已购买</p>
+		</div>
+	</li>
+	<li>
+		<div class="one">
+			<img src="img/life/life2.jpg" alt="">
+		</div>
+		<div class="two">
+			<p><span>1.2折</span>新田园，林下散养草鸡蛋 40枚 纯天然无污</p>
+			<p>
+				￥<b>51</b>.00
+				<span>￥96.00</span>
+			</p>
+			<p><i>1240</i>人已购买</p>
+		</div>
+	</li>
+	<li>
+		<div class="one">
+			<img src="img/life/life4.jpg" alt="">
+		</div>
+		<div class="two">
+			<p><span>1.2折</span>新田园，林下散养草鸡蛋 40枚 纯天然无污</p>
+			<p>
+				￥<b>51</b>.00
+				<span>￥96.00</span>
+			</p>
+			<p><i>1240</i>人已购买</p>
+		</div>
+	</li>
+</div>
+</body>
+</html>

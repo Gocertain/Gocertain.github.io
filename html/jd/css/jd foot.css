@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ynfoot begin*/
+.daynav{height:25px;}
+.daynav a{font-size:20px; color:#666; padding-right:226px;}
+
+.day{width:992px;height:282px; margin-top:10px;}
+.day-l{width:240px; height:282px; border:1px solid #e4e4e4;}
+.day-l img{padding:22px 22px;}
+.day-l a{font-size:12px; color:#666; line-height:24px; padding-left:20px;}
+.day-l .one{color:#e12228;}
+
+.day-m{height:282px; border:1px solid #e4e4e4; border-left:0;}
+.day-m-t{width:440px;height:141px;}
+.day-m-t .two{width:219px; height:121px; padding-top:20px;}
+.day-m-t .two img{width:100px; height:100px;}
+.day-m-t .two p{width:119px;font-size:12px; color:#666; line-height:22px;}
+.day-m-t .two .on{color:#e12228; font-size:14px; font-weight:bold;}
+.day-m-t .three{border-bottom:1px solid #e4e4e4;}
+.day-m-t .four{border-right:1px solid #e4e4e4;}
+
+.day-r{width:991px;height:282px;border:1px solid #e4e4e4; border-left:0;}
+.day-r-t{width:307px; height:141px; border-bottom:1px solid #e4e4e4;}
+.day-r-t img{width:100px; height:100px; padding-top:20px;}
+.day-r-t p img{width:28px; height:28px;}
+.day-r-t p{width:207px;font-size:12px; color:#666; line-height:22px;}
+.day-r-t .five{width:165px; height:55px; background:#f8f8f8;}
+
+.day-r-b{width:307px; height:141px; margin-top:20px;}
+.day-r-b img{width:100px; height:100px;}
+.day-r-b p img{width:28px; height:28px;}
+.day-r-b p{width:207px;font-size:12px; color:#666; line-height:22px;}
+.day-r-b .five{width:165px; height:55px; background:#f8f8f8;}
+
+.last-banner{height:93px; background:#f5f5f5; margin-top:30px;}
+.last-banner1{height:73px; padding-top:20px;}
+
+.service{width:1000px;height:187px; border-bottom:1px solid #ededed; margin:0 auto; padding-top:15px; margin-bottom:23px; color:#989898;}
+.service ul{width:140px;}
+.ser-tit{display:block; height:35px; line-height:35px; font-size:15px; font-weight:bold; }
+.ser-tit1{display:block; height:20px; line-height:20px; font-size:12px; color:#989898;}
+
+.chicken{width:262px; height:204px;background:url(../img/yn-12.png) no-repeat 0 -127px;float:right; }
+.chicken h4{padding-left:10px; color:#666;}
+
+
+.friendlink{height:25px; margin:0 auto 13px; text-align:center;}
+.friendlink li a{display:block; line-height:12px; height:12px; text-align:center; border-right:1px solid #956695; padding:0 8px; color:#666;}
+.friendlink li .link-a{display:block; width:100px; line-height:12px; height:12px; text-align:center; border-right:1px solid #956695;}
+.friendlink li .last{border:none;}
+
+.note1{width:1200px;height:24px; line-height:24px; text-align:center;}
+p .p-a{padding:0 5px; border-right:1px solid #956695; color:#666;}
+.note2{height:24px; line-height:24px; text-align:center; margin-bottom:20px;color:#666;}
+.bot-logo{width:650px; height:32px; margin:0 auto;}
+.bot-logo li{margin-right:13px; float:left;}
+.bot-logo .lat{margin-right:0px;}
+

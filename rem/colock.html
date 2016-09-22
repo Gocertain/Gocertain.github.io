@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<link rel="stylesheet" href="css/colock.css">
+<script>
+window.onload = function(){
+	var oD = document.querySelector('.all');
+	var oH = document.querySelector('.hou');
+	var oM = document.querySelector('.min');
+	var oS = document.querySelector('.sec');
+
+	for(var i=0;i<60;i++){
+		var oSpan = document.createElement("span");
+		oSpan.style.webkitTransform = "rotate("+i*6+"deg)";
+		if(i%5==0){
+			oSpan.className="one";
+			oSpan.innerHTML = "<em>"+(i/5||12)+"</em>"
+			var oEm = oSpan.children[0];
+			oEm.style.webkitTransform = "rotate(-"+i*6+"deg)";
+		}
+		oD.appendChild(oSpan);
+	}
+	function colock(){
+		var oDate = new Date();
+		var hour = oDate.getHours();
+		var minute = oDate.getMinutes();
+		var second = oDate.getSeconds();
+		var msecond = oDate.getMilliseconds();
+		oH.style.webkitTransform = "rotate("+(hour*30+minute/60*30)+"deg)";
+		oM.style.webkitTransform = "rotate("+(minute*6+second/60*6)+"deg)";
+		oS.style.webkitTransform = "rotate("+(second*6+msecond/1000*6)+"deg)";
+	}
+	colock();
+	setInterval(colock,30);
+
+}
+</script>
+</head>
+<body>
+<div class="all">
+	<div class="hou"></div>
+	<div class="min"></div>
+	<div class="sec"></div>
+	<div class="cen">
+		<span></span>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script>
+;(function(win,doc){
+	var d = doc.documentElement;
+	function change(){
+		d.style.fontSize = d.clientWidth/16+"px";
+	}
+	win.addEventListener("resize",change,false);
+	change();
+})(window,document);
+</script>
+<title>Examples</title>
+<style>
+*{margin: 0;padding: 0;list-style: none;}
+header{
+	width: 16rem;
+	height: 2.5rem;
+	background: -webkit-linear-gradient(rgba(236,236,236,0),rgba(236,236,236,1));;
+}
+header .btn{
+	width: 3.5rem;
+	height: 1.7rem;
+	background:url("img/back.png") no-repeat;
+	background-size: 100%;
+	margin:0.37rem;
+	float:left;
+}
+header .logo{
+	line-height:1.5rem;
+	height: 1.5rem;
+	float:left;
+	font-size:0.75rem;
+	margin-top:0.5rem;
+	margin-left: 2.4rem;
+}
+.menu{
+	width: 16rem;
+	height: 1.9rem;
+	display:-webkit-box;
+	border-top:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;
+}
+.menu li{height:1.9rem;border-left:1px solid #dcdcdc;
+	-webkit-box-flex:1;font-size:0.6rem;line-height:1.9rem;
+	text-align:center;
+}
+.list{width: 16rem;}
+.list li{width: 16rem;height: 5.5rem;border-bottom:1px solid #ccc;
+		padding:0.75em 0;}
+.list li .left{
+	width: 3.5rem;height:100%;
+	margin:0 1rem;
+	float:left;
+}
+.list li .left img{width: 3.5rem;height: 2rem;}
+.list li .left p{width: 100%;font-size: 0.55rem;text-align:center;}
+.list li .left div{margin-top:0.8rem;width: 100%;height:1.25rem;color:red;}
+.list li .left div p:nth-child(1){
+	float:left;font-size:1.25rem;font-weight:bold;width:1.25rem;
+}
+.list li .left div p:nth-child(2){
+	float:right;width:1.25rem;font-size:0.55rem;
+}
+.list li .left div p:nth-child(2) span{
+	color:#999;
+}
+.list li .right{
+	float:left;
+	width: 10rem;
+	height: 5rem;
+	position:relative;
+}
+.list li .right img{width: 100%;height: 100%;}
+.list li .right .mask{width: 100%;position:absolute;left: 0;bottom: 0;}
+.list li .right .mask div{width: 100%;position:absolute;left: 0;top: 0;opacity:0.5;height:100%;background:#000;}
+.list li .right .mask p{font-size:0.6rem;line-height: 1rem;color:#fff;text-indent:1em;position:relative;}
+</style>
+</head>
+<body>
+<header id="header">
+	<a href="juhuasuan.html"><div class="btn"></div></a>
+    <h1 class="logo">品牌团</h1>
+</header>
+<div class="menu">
+	<li><a href="goods.html">商品</a></li>
+	<li><a href="life.html">生活</a></li>
+	<li><a href="javascript:;">品牌</a></li>
+	<li><a href="money.html">聚宝盆</a></li>
+</div>
+<ul class="list">
+	<a href="NIKE.html">
+		<li>
+			<div class="left">
+				<img src="" alt="">
+				<p>耐克</p>
+				<div>
+					<p>3.5</p>
+					<p><span>全场</span>折起</p>
+				</div>
+			</div>
+			<div class="right">
+				<img src="img/NIKE/nike.jpg" alt="">
+				<div class="mask">
+					<div></div>
+					<p>极致轻快 绝影一击</p>
+				</div>
+			</div>
+		</li>
+	</a>
+	<a href="NIKE.html">
+		<li>
+			<div class="left">
+				<img src="" alt="">
+				<p>耐克</p>
+				<div>
+					<p>3.5</p>
+					<p><span>全场</span>折起</p>
+				</div>
+			</div>
+			<div class="right">
+				<img src="img/NIKE/nike.jpg" alt="">
+				<div class="mask">
+					<div></div>
+					<p>极致轻快 绝影一击</p>
+				</div>
+			</div>
+		</li>
+	</a>
+	<a href="NIKE.html">
+		<li>
+			<div class="left">
+				<img src="" alt="">
+				<p>耐克</p>
+				<div>
+					<p>3.5</p>
+					<p><span>全场</span>折起</p>
+				</div>
+			</div>
+			<div class="right">
+				<img src="img/NIKE/nike.jpg" alt="">
+				<div class="mask">
+					<div></div>
+					<p>极致轻快 绝影一击</p>
+				</div>
+			</div>
+		</li>
+	</a>
+	<a href="NIKE.html">
+		<li>
+			<div class="left">
+				<img src="" alt="">
+				<p>耐克</p>
+				<div>
+					<p>3.5</p>
+					<p><span>全场</span>折起</p>
+				</div>
+			</div>
+			<div class="right">
+				<img src="img/NIKE/nike.jpg" alt="">
+				<div class="mask">
+					<div></div>
+					<p>极致轻快 绝影一击</p>
+				</div>
+			</div>
+		</li>
+	</a>
+	<a href="NIKE.html">
+		<li>
+			<div class="left">
+				<img src="" alt="">
+				<p>耐克</p>
+				<div>
+					<p>3.5</p>
+					<p><span>全场</span>折起</p>
+				</div>
+			</div>
+			<div class="right">
+				<img src="img/NIKE/nike.jpg" alt="">
+				<div class="mask">
+					<div></div>
+					<p>极致轻快 绝影一击</p>
+				</div>
+			</div>
+		</li>
+	</a>
+</ul>
+</div>
+</body>
+</html>
