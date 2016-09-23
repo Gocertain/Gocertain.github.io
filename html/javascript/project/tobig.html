@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<meta name="description" content="智能社是一家专注于web前端开发技术的公司，目前主要提供JavaScript培训和HTML5培训两项服务，同时还推出了大量javascript基础知识教程，智能课堂为你带来全新的学习方法和快乐的学习体验。" />
+<title>智能社— http://www.zhinengshe.com</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	#con{
+		width: 400px;
+		height: 400px;
+		position: relative;
+	}
+	#box{
+		width: 400px;
+		height: 400px;
+	}
+	#box img{
+		width: 400px;
+		height: 400px;
+	}
+	#box span{
+		width: 200px;
+		height: 200px;
+		background: blue;
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity:0.3;
+		filter:alpha(opacity = 30);
+		cursor: move;
+		display: none;
+	}
+	#bigImg{
+		position: absolute;
+		left:410px;
+		top:0px;
+		width: 400px;
+		height: 400px;
+		overflow: hidden;
+		display: none;
+	}
+	#bigImg img{
+		position: absolute;
+		left:0;
+		top:0;
+	}
+</style>
+<script>
+	window.onload = function(){
+		var oBox = document.getElementById('box');
+		var oMask = document.getElementById('mask');
+		var oBig = document.getElementById('bigImg');
+		var oImg = oBig.getElementsByTagName('img')[0];
+		oBox.onmouseover = function(){
+			oMask.style.display = 'block';
+			oBig.style.display = 'block';
+		}
+		oBox.onmouseout = function(){
+			oMask.style.display = 'none';
+			oBig.style.display = 'none';
+		}
+		oBox.onmousemove = function(ev){
+			var oEvent = ev || event;
+			var x = oEvent.clientX - oMask.offsetWidth/2;
+			var y = oEvent.clientY - oMask.offsetHeight/2;
+			if(x <= 0){
+				x = 0;
+			}
+			if(x >= oBox.offsetWidth - oMask.offsetWidth){
+				x = oBox.offsetWidth - oMask.offsetWidth;
+			}
+			if(y <= 0){
+				y = 0;
+			}
+			if(y >= oBox.offsetHeight - oMask.offsetHeight){
+				y = oBox.offsetHeight - oMask.offsetHeight;
+			}
+			oMask.style.top = y + 'px';
+			oMask.style.left = x + 'px';
+			oImg.style.left = -oMask.offsetLeft*(oImg.offsetWidth - oBig.offsetWidth)/(oBox.offsetWidth - oMask.offsetWidth) + 'px';
+			oImg.style.top = -oMask.offsetTop*(oImg.offsetHeight - oBig.offsetHeight)/(oBox.offsetHeight - oMask.offsetHeight) + 'px';
+		}
+	}
+</script>
+</head>
+
+<body>
+<div id="con">
+	<div id="box">
+		<img src="img/5.jpg" alt="">
+		<span id="mask"></span>
+	</div>
+	<div id="bigImg">
+		<img src="img/5.jpg" alt="">
+	</div>
+</div>
+</body>
+</html>
