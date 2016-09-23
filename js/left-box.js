@@ -68,8 +68,12 @@ window.onload = function(){
 	var oBox=document.getElementById('js-box');
     var N=5;
     var R=oBox.offsetWidth/2;
+    var arr=['炫酷','手风琴','中心放大','照片墙','放大镜']
     for(var i=0;i<N;i++){
         var oSpan=document.createElement('span');
+        oSpan.innerHTML = arr[i];
+        var oA = document.createElement('a');
+        oA.href="#";
         oBox.appendChild(oSpan);
     };
     var aSpan=oBox.children;
@@ -88,7 +92,5 @@ window.onload = function(){
 	        }
 		    ibys=!ibys;
     	}
-
-    	console.log(jsBoxH,winH);
 	}
 }
