@@ -7,8 +7,11 @@
 <title>Bootstrap</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/all.css">
-
-
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/collent.js"></script>
+<script src="js/left-box.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/echarts.js"></script>
 </head>
 <body>
 <!-- 导航 -->
@@ -121,54 +124,54 @@
 	  <!-- Controls -->
 	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
+	    <span class="sr-only"></span>
 	  </a>
 	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
+	    <span class="sr-only"></span>
 	  </a>
 	</div>
 	<div id="web" class="container">
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="">
 				<img src="images/less.jpg" alt="">
 			</a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="">
 				<img src="images/sass.jpg" alt="">
 			</a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="http://jquery.com/">
 				<img src="images/jquery.png" alt="">
 			</a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="http://getbootstrap.com/2.3.2/"><img src="images/bootstrap.png" alt=""></a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="https://docs.angularjs.org/api"><img src="images/angular.jpg" alt=""></a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="http://www.react.org/"><img src="images/react.png" alt=""></a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="http://www.swiperapp.com/"><img src="images/swiper.png" alt=""></a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="http://seajs.org/docs/"><img src="images/sea.png" alt=""></a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="https://nodejs.org/en/"><img src="images/node.jpg" alt=""></a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="http://www.gulpjs.com.cn/"><img src="images/gulp.jpg" alt=""></a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="http://www.zeptojs.cn/"><img src="images/zepto.png" alt=""></a>
 		</div>
-		<div class="col-md-2 col-sm-4 col-xs-6">
+		<div class="col-md-2 col-sm-4 col-xs-4">
 			<a href="https://github.com/"><img src="images/github.jpg" alt=""></a>
 		</div>
 	</div>
@@ -193,7 +196,7 @@
 			  </span>
 			</div>
 			<div class="progress">
-			  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+			  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
 			    <span class="sr-only">50%</span>
 			  </div>
 			  <span class="progress-green">
@@ -209,44 +212,135 @@
 			  </span>
 			</div>
 		</div>
-		<canvas id="chart" class="col-md-4 pullright" height="230px"></canvas>
-	</div>
-	<div id="second" class="carousel slide">
-		<h3>项目制作</h3>
-		<div class="col-md-2 .col-sm-4 .col-xs-6">
-			<img src="html/xiaomi.jpg" alt="">
-			<p>小米</p>
-		</div>
-		<div class="col-md-2 .col-sm-4 .col-xs-6">
-			<img src="html/hunsha.jpg" alt="">
-			<p>蒙娜丽莎</p>
-		</div>
-		<div class="col-md-2 .col-sm-4 .col-xs-6">
-			<img src="html/oppo.jpg" alt="">
-			<p>OPPO</p>
-		</div>
-		<div class="col-md-2 .col-sm-4 .col-xs-6">
-			<img src="html/beautiful.jpg" alt="">
-			<p>美丽说</p>
-		</div>
-		<div class="col-md-2 .col-sm-4 .col-xs-6">
-			<img src="html/jd.jpg" alt="">
-			<p>京东</p>
-		</div>
-		<div class="col-md-2 .col-sm-4 .col-xs-6">
-			<img src="html/360.jpg" alt="">
-			<p>360影视</p>
-		</div>
-		<div class="col-md-2 js_project">
-			JS案列
-		</div>
-		<div class="col-md-10 js-box">
-			<div id="js-box"></div>
-		</div>
+		<canvas id="chart" class="col-md-4 pullright" height="230px"></canvas><script>
+		    var myChart = echarts.init(document.getElementById("chart"));
 
+		        myChart.setOption({
+		        	
+		            title: {
+		                text: '总分配概览',
+		                textStyle:{
+		        		color:'red'
+		        		}
+		            },
+		            legend: {
+		                data: ['']
+		            },
+		            textStyle: {
+			            color: '#000'
+			        },
+
+		            tooltip: {},
+		            radar: {
+		                // shape: 'circle',
+		                indicator: [
+		                   { name: 'HTML/CSS', max: 100},
+		                   { name: 'JS原生', max: 100},
+		                   
+		                   { name: 'JS框架与库', max:100},
+		                   { name: 'H5/C3', max: 100}
+		                ]
+		            },
+		            series: [{
+		                name: '预算',
+		                type: 'radar',
+		                // color:'#999',
+		                areaStyle: {normal: {},},
+		                data : [
+		                    {
+		                        value : [80,70,65,65],
+		                        name : '技能'
+		                    }
+		                ]
+		            }]
+		        });
+		</script>
+	</div>
+	<div class="row">
+		<div id="second" class="carousel slide container">
+		<h3>项目制作</h3>
+		<div class="row">
+			<div class="col-md-2 col-sm-4 col-xs-4">
+				<a href="html/mi/xiaomi.html"><img src="html/xiaomi.jpg" alt=""></a>
+				<p>小米</p>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-4">
+				<a href="html/hunsha/hunsha.html"><img src="html/hunsha.jpg" alt=""></a>
+				<p>蒙娜丽莎</p>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-4">
+				<a href="html/oppo/oppo.html"><img src="html/oppo.jpg" alt=""></a>
+				<p>OPPO</p>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-4">
+				<a href="html/beautiful/beautiful.html"><img src="html/beautiful.jpg" alt=""></a>
+				<p>美丽说</p>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-4">
+				<a href="html/jd/jingdong.html"><img src="html/jd.jpg" alt=""></a>
+				<p>京东</p>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-4">
+				<a href="html/360/360.html"><img src="html/360.jpg" alt=""></a>
+				<p>360影视</p>
+			</div>
+		</div>
+		<dic class="row">
+			<div class="col-md-12">
+			<div class="col-md-2 js_project">
+				JS案列
+			</div>
+			<div class="col-md-6">
+				<div id="js-box" class="js-box"></div>
+			</div>
+			<div class="clock col-md-4">
+				<div class="hou"></div>
+				<div class="min"></div>
+				<div class="sec"></div>
+				<div class="cap"></div>
+			</div>
+			<script>
+				var oClock = document.querySelector('.clock');
+				    var oHou = document.querySelector('.clock .hou');
+				    var oMin = document.querySelector('.clock .min');
+				    var oSec = document.querySelector('.clock .sec');
+
+
+				    var N = 60;
+				    for(var i=0;i<N;i++){
+				        var oS = document.createElement('span');
+				        oS.style.WebkitTransform = 'perspective(800px) rotate('+i*6+'deg)';
+				        if(i%5==0){
+				            oS.className = 'big-scale';
+				            oS.innerHTML = '<em>'+(i/5||12)+'<\/em>';
+				            var oEm = oS.children[0];
+				            oEm.style.WebkitTransform = 'perspective(800px) rotate('+-i*6+'deg)';
+				        }
+				        oClock.appendChild(oS);
+				    }
+
+
+				    function clock(){
+				        var oDate = new Date();
+				        var h = oDate.getHours();
+				        var m = oDate.getMinutes();
+				        var s = oDate.getSeconds();
+				        var ms = oDate.getMilliseconds();
+
+				        oHou.style.WebkitTransform = 'perspective(800px) rotate('+(h*30+m/60*30)+'deg)';
+				        oMin.style.WebkitTransform = 'perspective(800px) rotate('+(m*6+s/60*6)+'deg)';
+				        oSec.style.WebkitTransform = 'perspective(800px) rotate('+(s*6+ms/1000*6)+'deg)';
+				    };
+				    clock();
+				    setInterval(clock,1000);
+			</script>
+		</div>
+		</dic>
+	</div>
 	</div>
 	<div id="third" style="height:1000px">
-		<p></p>
+		<h3>CSS-3D</h3>
+
 	</div>
 </div>
 <!-- <div id="left-box">
@@ -258,10 +352,7 @@
 	<i>密&nbsp;码:</i><input type="password">
 </div> -->
 
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/collent.js"></script>
-<script src="js/left-box.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

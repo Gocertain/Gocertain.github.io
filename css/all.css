@@ -12,6 +12,15 @@ nav h4{
 	animation-timing-function:ease-in;
 	animation-iteration-count:infinite;
 }
+.clock{border:5px solid #000; border-radius:50%;position:relative;width: 306px;height:306px;margin-top:60px;margin:5% auto 0;}
+.clock div{position:absolute; -webkit-transform-origin:center bottom; -webkit-transform:perspective(800px) rotate(0deg); }
+.clock .hou{ width:10px; height:80px; background:#000; left:50%; margin-left:-5px; top:70px; border-radius:50% 50% 0 0;}
+.clock .min{ width:8px; height:100px; background:#000; left:50%; margin-left:-4px; top:50px; border-radius:50% 50% 0 0;}
+.clock .sec{ width:4px; height:120px; background:red; left:50%; margin-left:-2px; top:30px; border-radius:50% 50% 0 0;}
+.clock span{ position:absolute; left:50%; top:0; width:4px; height:8px; margin-left:-3px; background:#000; -webkit-transform-origin:center 150px; -webkit-transform:perspective(800px) rotate(0deg);}
+.clock span.big-scale{ width:6px; margin-left:-4px; height:12px;}
+.big-scale em{position:absolute; top:15px; font-style:normal;-webkit-transform:perspective(800px) rotate(0deg); width:30px; left:50%; margin-left:-15px; text-align:center;}
+.clock .cap{ width:20px; height:20px; border-radius:50%; background: -webkit-radial-gradient(#fff,black); position:absolute; left:50%; top:50%; margin-left:-10px; margin-top:-10px;} 
 #first h3{margin-bottom:40px;}
 @keyframes myfirst{
 0%   {background-position:0 0px;}
@@ -21,7 +30,7 @@ nav h4{
 
 /*链接网站*/
 #web{width:100%;box-sizing:border-box;margin-top:20px;}
-#web div{height:180px;padding:10px;display: -webkit-box;
+#web div{height:150px;padding:10px;display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -38,13 +47,19 @@ nav h4{
 /*canvas*/
 #chart{display:block;cursor:pointer;padding-bottom:30px;}
 /*html*/
-#second{height:800px;}
+#second{height:auto;}
 #second h3{padding-bottom:40px;}
-#second img{width:121px;height: 121px;}
+#second img{width:80%;height: auto;}
+#second div:nth-child(3) img{
+   padding:15% 0;
+}
+#second div:nth-child(5) img{
+    padding:9% 0;
+}
 #second p{font-size:16px;color:#de34ea;padding:7px;}
-#second .js_project{line-height:121px;font-size:30px;}
-#js-box{ width:300px; height:300px; position:relative; margin:100px 30px; border-radius:50%; border:1px solid #eee;}
-#js-box span{ position:absolute; left:50%; margin-left:-40px; margin-top:-40px; border-radius:50%; width:80px; height:80px; background:#39de89;font-size:20px;line-height:80px;text-align:center;color:#de2345;}
+#second .js_project{font-size:30px;}
+#js-box{ width:280px; height:280px;position:relative;margin:15% auto 20%;border-radius:50%; border:6px solid #eee;}
+#js-box span{ position:absolute; left:50%; margin-left:-43px; margin-top:-43px; border-radius:50%; width:80px; height:80px; background:#39de89;font-size:20px;line-height:80px;text-align:center;color:#de2345;}
 
 
 

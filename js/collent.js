@@ -41,6 +41,30 @@ function doMove(obj,iTarget,obja){
         }
     },30)
 }
+function backMove(obj,iTarget,obja){
+    clearInterval(obj.timer);
+    var R=obj.parentNode.offsetWidth/2;
+    var a=0;
+    var start=obja || 0;
+    var dis=iTarget-start;
+    var time=2000;
+    var count=Math.ceil(time/30);
+    var n=0;
+
+    obj.timer=setInterval(function(){
+        n++;
+        var a=1-n/count;
+        var cur=start+dis*(1-a*a*a);
+        var l=R+R*Math.sin(a2d(cur));
+        var t=R-R*Math.cos(a2d(cur));
+        obj.a=cur;
+        obj.style.left=l+'px';
+        obj.style.top=t+'px';
+        if(n==count){
+            clearInterval(obj.timer);
+        }
+    },30)
+}
 function getPos(obj){
 	var l = 0;
 	var t = 0;
